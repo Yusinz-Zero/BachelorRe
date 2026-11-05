@@ -2,15 +2,17 @@
 
 Language: **English** | [ไทย (TH)](README.th.md)
 
-A lightweight **Windows launcher** for running a private **Arknights** server in one click — download the latest OpenBachelor S/C, apply the right patches, boot the server, launch the game, and control the trainer — all from a clean desktop UI.
+*OpenBachelor Launcher. For PvZ Online.*
 
-Built with **Tauri 2 + React**, wrapping the [OpenBachelor](https://github.com/pfyy) server/client (**S** = server, **C** = client/launcher).
+A lightweight **Windows launcher** for running a private OpenBachelor server in one click — download the latest S/C, apply the right patches, boot the server, launch the game, and control the trainer — all from a clean desktop UI.
+
+Built with **Tauri 2 + React**, wrapping [OpenBachelor](https://github.com/pfyy) server/client (**S** = server, **C** = client/launcher).
 
 ---
 
 ## Features
 
-- **One-click setup** — download OpenBachelor S/C, patch region/config automatically, boot the server, start the game
+- **One-click setup** — download OpenBachelor S/C, patch configs automatically, boot the server, start the game
 - **Trainer console** — click-to-toggle cheat switches or type raw commands (`!runcode`, `?callback` included) — no console needed
 - **Save editor (/save)** — start a **new game** or play the built-in **unlock-everything** template, with automatic backups + Backup/Restore
 - **Background toggle** — eye icon in the sidebar to show/hide the rotating art
@@ -22,13 +24,13 @@ Built with **Tauri 2 + React**, wrapping the [OpenBachelor](https://github.com/p
 
 - **Windows 10/11 x64**
 - **Node.js** installed (`Program Files\nodejs` or on PATH)
-- **Arknights client** installed (for the `Arknights.exe` path)
+- The **game client** installed (its exe is set in Settings)
 
 ## Getting started
 
 1. **Download the installer** from the [Releases](https://github.com/Yusinz-Zero/BachelorRe/releases) page (`BachelorRe_0.1.0_x64-setup.exe`).
 2. **Run it** — pick any install folder (SmartScreen: *More info → Run anyway*; the installer is unsigned).
-3. Open the app → **Settings** → set **Game path** (`Arknights.exe`).
+3. Open the app → **Settings** → set **Game path** (your game's exe).
 4. Press **Check for Update** on the first run to download S/C, then hit **Start Game**.
 
 > First run installs everything into the app folder — no admin needed for a per-user install.
@@ -58,9 +60,9 @@ Headless CLI: `node cli.js server|game|trainer|pc health|status|…` — see the
 
 ## Credits
 
-Bachelor:Re Launcher is an **independent launcher** for [OpenBachelor](https://github.com/pfyy) — the private-server project for *Arknights* by **pfyy**.
+Bachelor:Re Launcher is an **independent launcher** for [OpenBachelor](https://github.com/pfyy) — the private-server project by **pfyy**.
 
 - Launcher author: [Yusinz-Zero](https://github.com/Yusinz-Zero)
 - OpenBachelor S / C: [pfyy](https://github.com/pfyy) — thank you for the S/C protocol, patches and templates 🖤
 
-> **Disclaimer:** This launcher is not affiliated with OpenBachelor, HYPERGRYPH, or Arknights. It only patches *configs* — it never modifies OpenBachelor protocol/code. Use on private/testing servers at your own risk.
+> **Disclaimer:** This launcher is not affiliated with OpenBachelor or the game publisher. It only patches *configs* — it never modifies OpenBachelor protocol/code. Game and trademark names belong to their respective owners. Use on private/testing servers at your own risk.
