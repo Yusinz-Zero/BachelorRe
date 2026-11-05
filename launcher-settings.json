@@ -1,0 +1,15 @@
+{
+  "SettingsVersion": 1,
+  "Region": "EN",
+  "ClientVersion": "37.7.41",
+  "ServerPort": 8443,
+  "TrainerPort": 9443,
+  "GamePath": "C:\\YostarGames\\Arknights_EN\\Arknights.exe",
+  "ClientDir": "",
+  "RosterMode": "none",
+  "FreshStartPatchEnabled": false,
+  "AutoUpdate": false,
+  "RollbackOnFail": true,
+  "CheckForUpdateOnStart": false,
+  "MinimizeToTrayOnClose": true
+}

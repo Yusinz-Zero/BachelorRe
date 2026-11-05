@@ -1,0 +1,32 @@
+{
+  "name": "bachelor-re",
+  "productName": "Bachelor:Re",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Bachelor:Re Launcher — auto-manages OpenBachelor S/C (download, patch, run) with a RevivalSide-style UI.",
+  "scripts": {
+    "status": "node cli.js status",
+    "check:update": "node cli.js check",
+    "update": "node cli.js update",
+    "deps": "node cli.js deps",
+    "doctor": "node cli.js doctor",
+    "patch": "node cli.js patch",
+    "patch:apply": "node cli.js patch apply",
+    "ui": "node server/ui-server.js",
+    "dev": "node server/ui-server.js",
+    "ui:dev": "npm --prefix ui run dev",
+    "ui:build": "npm --prefix ui run build",
+    "ui:preview": "npm --prefix ui run preview",
+    "tauri": "tauri",
+    "tauri:dev": "tauri dev",
+    "tauri:build": "tauri build",
+    "check:core": "node --check cli.js && powershell -NoProfile -Command \"Get-ChildItem core,server,services -Recurse -Filter *.js | ForEach-Object { node --check $_.FullName }\""
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

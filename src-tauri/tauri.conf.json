@@ -1,0 +1,55 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "BachelorRe",
+  "version": "0.1.0",
+  "identifier": "com.bachelorre.launcher",
+  "build": {
+    "beforeDevCommand": "npm --prefix ui run dev",
+    "devUrl": "http://127.0.0.1:5173",
+    "beforeBuildCommand": "node scripts/stage-backend.mjs && npm --prefix ui run build",
+    "frontendDist": "../ui/dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "label": "main",
+        "title": "Bachelor:Re",
+        "width": 1344,
+        "height": 756,
+        "minWidth": 952,
+        "minHeight": 536,
+        "center": true,
+        "resizable": true,
+        "decorations": false,
+        "backgroundColor": "#0b0b0b"
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": ["nsis"],
+    "resources": {
+      "backend/server": "server",
+      "backend/services": "services",
+      "backend/core": "core",
+      "backend/patches": "patches",
+      "backend/bg": "bg"
+    },
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ],
+    "windows": {
+      "nsis": {
+        "installMode": "currentUser",
+        "installerHooks": "hooks.nsh"
+      }
+    }
+  }
+}

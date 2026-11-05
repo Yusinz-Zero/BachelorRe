@@ -1,0 +1,15 @@
+node_modules/
+ui/node_modules/
+ui/dist/
+src-tauri/target/
+components/
+downloads/
+deps-cache/
+logs/
+data/*.json
+data/.state-*
+.env
+dist/
+target/
+src-ui/node_modules/
+.DS_Store

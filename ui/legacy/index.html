@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bachelor:Re</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="titlebar">
+    <div class="brand">Bachelor<em>:Re</em></div>
+    <div class="tagline">OpenBachelor component launcher · PC · EN</div>
+  </header>
+
+  <nav class="tabs">
+    <button class="tab active" data-panel="play">Play</button>
+    <button class="tab" data-panel="components">Components</button>
+    <button class="tab" data-panel="patches">Patches</button>
+    <button class="tab" data-panel="logs">Logs</button>
+    <button class="tab" data-panel="settings">Settings</button>
+  </nav>
+
+  <main>
+    <!-- PLAY -->
+    <section class="panel active" id="panel-play">
+      <div class="hero">
+        <h1>Ready to deploy?</h1>
+        <p>Boot the server, launch the game, attach the hook, and hand you the trainer — from one button.</p>
+        <div class="hero-actions">
+          <button id="btn-play" class="btn big">Play</button>
+          <button id="btn-stop" class="btn big ghost" disabled>Stop</button>
+        </div>
+      </div>
+      <div class="cards" id="play-status"></div>
+    </section>
+
+    <!-- COMPONENTS -->
+    <section class="panel" id="panel-components">
+      <div class="panel-head">
+        <h2>OpenBachelor components</h2>
+        <div class="head-actions">
+          <button id="btn-check" class="btn">Check for Update</button>
+          <button id="btn-update" class="btn">Update all</button>
+          <button id="btn-deps" class="btn ghost">Install deps</button>
+        </div>
+      </div>
+      <div class="cards" id="component-cards"></div>
+    </section>
+
+    <!-- PATCHES -->
+    <section class="panel" id="panel-patches">
+      <div class="panel-head">
+        <h2>Patch catalog (M2)</h2>
+        <button id="btn-patch" class="btn">Apply all</button>
+      </div>
+      <div class="cards" id="patch-cards"></div>
+    </section>
+
+    <!-- LOGS -->
+    <section class="panel" id="panel-logs">
+      <div class="panel-head">
+        <h2>Operation log</h2>
+        <button id="btn-clear-log" class="btn ghost">Clear</button>
+      </div>
+      <pre class="console" id="console">Bachelor:Re ready — press Check for Update to inspect upstream master.<br></pre>
+    </section>
+
+    <!-- SETTINGS -->
+    <section class="panel" id="panel-settings">
+      <h2>Settings</h2>
+      <div class="settings-block">
+        <label>Region (locked)</label><input id="set-region" disabled value="EN" />
+        <label>Client version (locked)</label><input id="set-clientver" disabled value="37.7.41" />
+        <label>Server port</label><input id="set-serverport" type="number" value="8443" />
+        <label>Trainer port</label><input id="set-trainerport" type="number" value="9443" />
+        <label>Game path (Arknights.exe)</label><input id="set-gamepath" placeholder="C:\…\Arknights.exe" />
+        <label>Fresh-start patch (rosterMode none on new accounts)</label>
+        <select id="set-roster"><option value="none">none</option><option value="starter">starter</option><option value="all">all</option></select>
+        <button id="btn-save-settings" class="btn">Save settings</button>
+        <span id="settings-saved" class="hint"></span>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
