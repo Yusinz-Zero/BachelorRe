@@ -5,6 +5,7 @@ src-tauri/target/
 components/
 downloads/
 deps-cache/
+src-tauri/backend/
 logs/
 data/*.json
 data/.state-*
