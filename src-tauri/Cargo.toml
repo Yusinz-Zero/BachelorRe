@@ -1,6 +1,6 @@
 [package]
 name = "bachelor-re"
-version = "0.1.0"
+version = "0.1.1"
 description = "Bachelor:Re — OpenBachelor launcher (S/C) desktop shell"
 authors = ["Bachelor:Re"]
 edition = "2021"
