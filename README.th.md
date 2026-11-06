@@ -28,7 +28,7 @@ Launcher **Windows** น้ำหนักเบา สำหรับรัน 
 
 ## วิธีเริ่มต้น
 
-1. **ดาวน์โหลดตัวติดตั้ง** จากหน้า [Releases](https://github.com/Yusinz-Zero/BachelorRe/releases) (`BachelorRe_0.1.0_x64-setup.exe`)
+1. **ดาวน์โหลดตัวติดตั้ง** จากหน้า [Releases](https://github.com/Yusinz-Zero/BachelorRe/releases) (`BachelorRe_0.1.1_x64-setup.exe`)
 2. **รันติดตั้ง** — เลือกโฟลเดอร์ไหนก็ได้ (SmartScreen: *More info → Run anyway* เพราะ installer ยังไม่ sign)
 3. เปิดแอป → **Settings** → ตั้ง **Game path** (exe ของเกม)
 4. ครั้งแรกกด **Check for Update** เพื่อโหลด S/C แล้วกด **Start Game**

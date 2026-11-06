@@ -28,7 +28,7 @@ Built with **Tauri 2 + React**, wrapping [OpenBachelor](https://github.com/pfyy)
 
 ## Getting started
 
-1. **Download the installer** from the [Releases](https://github.com/Yusinz-Zero/BachelorRe/releases) page (`BachelorRe_0.1.0_x64-setup.exe`).
+1. **Download the installer** from the [Releases](https://github.com/Yusinz-Zero/BachelorRe/releases) page (`BachelorRe_0.1.1_x64-setup.exe`).
 2. **Run it** — pick any install folder (SmartScreen: *More info → Run anyway*; the installer is unsigned).
 3. Open the app → **Settings** → set **Game path** (your game's exe).
 4. Press **Check for Update** on the first run to download S/C, then hit **Start Game**.

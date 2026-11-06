@@ -1,7 +1,7 @@
 {
   "name": "bachelor-re",
   "productName": "Bachelor:Re",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "type": "module",
   "description": "Bachelor:Re Launcher — auto-manages OpenBachelor S/C (download, patch, run) with a RevivalSide-style UI.",
