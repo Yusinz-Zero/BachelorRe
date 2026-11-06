@@ -2,7 +2,7 @@ node_modules/
 ui/node_modules/
 ui/dist/
 src-tauri/target/
-components/
+/components/
 downloads/
 deps-cache/
 src-tauri/backend/
